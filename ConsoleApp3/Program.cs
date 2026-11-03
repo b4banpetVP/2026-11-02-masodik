@@ -54,5 +54,23 @@ string maganhangzot_torol(string szoveg)
             szovegketto += i;
         }
     }
-    return(szoveg);
+    return(szovegketto);
 }
+Console.WriteLine(maganhangzot_torol("Iden Java szigeten voltunk nyaralni. Nem is tudtam, hogy elneveztek egy helyet egy programozasi nyelvrol"));
+
+//8.feladat: Szöveg titkosítása
+
+string kodol(string uzenet,int szam,char karakter)
+{ string kodolt_uzenet = "";
+    foreach (char i in uzenet) 
+    { 
+        kodolt_uzenet += i;
+            for (int j = 1; j<=szam;j++)
+            {
+            kodolt_uzenet+=karakter;
+            }
+    }
+    return (kodolt_uzenet);
+}
+
+Console.WriteLine(kodol("Pizza delben?", 3, 'x'));
